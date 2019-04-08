@@ -1,0 +1,10 @@
+version:  '3'
+services:
+  datascience-notebook:
+      image:    jupyter/datascience-notebook
+      volumes:
+        - /Users/joeleliason/Projects/neuro/nest-docker/work:/home/jovyan/work
+      ports:
+        - 8889:8888
+      container_name:   jupyter_notebook
+      command: "start-notebook.sh"

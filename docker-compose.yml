@@ -1,0 +1,8 @@
+version:                "3"
+services:
+  auryn:
+      image:            auryn
+      volumes:
+        - /Users/joeleliason/Projects/neuro/auryn/work:/home/work
+      stdin_open: true
+      tty: true
