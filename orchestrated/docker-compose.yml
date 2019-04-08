@@ -1,8 +1,8 @@
 version:                "3"
 services:
   auryn:
-      image:            auryn
+      image:            orchestrated
       volumes:
-        - ${LOCAL_WORKING_DIR}:/home/work
+        - ${LOCAL_WORKING_DIR}:/home/data/sim
       stdin_open: true
       tty: true
