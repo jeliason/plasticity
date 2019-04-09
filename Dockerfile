@@ -13,7 +13,7 @@ WORKDIR /home
 RUN git clone https://github.com/fzenke/auryn.git
 WORKDIR /home/auryn/build/release
 RUN ./bootstrap.sh && make
-
+RUN make install
 
 RUN mkdir /home/work
 
