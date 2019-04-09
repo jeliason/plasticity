@@ -9,8 +9,9 @@ ENV TERM=xterm \
 RUN apt-get update && apt-get install -y \
  cmake git build-essential libboost-all-dev
 
+WORKDIR /home
 RUN git clone https://github.com/fzenke/auryn.git
-WORKDIR /auryn/build/release
+WORKDIR /home/auryn/build/release
 RUN ./bootstrap.sh && make
 
 
